@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>My Website</title>
+	<style>
+        html{
+            scroll-behavior: smooth;
+        }
+        
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('C:/Users/Ale/Documents/static/Montserrat-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+        .home {
+            width: 100%;
+            height: 770px;
+            object-fit: cover;
+            overflow: hidden;
+            padding: 50px;
+        }
+
+		body {
+			font-family: 'Montserrat', sans-serif;
+            background-color: #eee;
+		}
+
+		nav a:hover {
+			color: #b1d5fc;
+		}
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown a{
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            display: none;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 100%;
+            
+        }
+
+        .dropdown-content a {
+            margin: 0px;
+            display : block;
+            text-decoration: none;
+            padding: 12px 16px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+		section {
+			background-color: #ffffff;
+            padding: 50px 10% 50px 150px;
+			text-align: left;
+		}
+
+		section.white-box {
+			background-color: #fff;
+			padding: 50px;
+		}
+
+		h1 {
+			margin-bottom: 20px;
+		}
+
+		h2 {
+			margin-bottom: 10px;
+		}
+
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		label {
+			display: block;
+			margin: 10px;
+		}
+
+		input, textarea {
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			max-width: 500px;
+			font-size: 16px;
+			font-family: inherit;
+			resize: none;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			cursor: pointer;
+			transition: all 0.2s;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #ccc;
+		}
+
+        nav {
+            top: 0px;
+            position: fixed;
+            display: block;
+            background-color: rgb(255, 255, 255);
+            transition: top 0.3s;
+            width: 100%;
+            min-height: auto;
+            text-align: center;
+            z-index: 2;
+        }
+
+        nav a{
+            display: inline-block;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 17px;
+            color: #000000;
+			margin: 0 20px;
+			transition: all 0.2s;
+        }
+
+
+        .image-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .image-container {
+            position: relative;
+            margin: 10px;
+            width: 30%;
+        }
+
+        .image-overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: .5s ease;
+        }
+
+        .image-container:hover .image-overlay {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: #6386e7;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            
+        }
+
+        .btn:hover {
+            background-color: #6386e7;
+        }
+
+        li {
+            list-style-position: inside;
+            padding-left: 20px;
+        }
+
+	</style>
+</head>
+<body>
+        <nav  id="navbar">
+            <a href="index.html#about-me">About Me</a>
+            <div class="dropdown">
+                <a href="index.html#projects">Projects</a>
+                <div class="dropdown-content">
+                    <a href="dashboard.html">Dashboards</a>
+                    <a href="analytics.html">Data Analytics</a>
+                    <a href="science.html">Data Science</a>
+                </div>
+            </div>
+            <a href="index.html#portfolio">Portfolio</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+
+        <section id="projects">
+            <h2 style = "padding: 9px;width: 20%; border-bottom: 2px solid #a4cdfa;">
+                Data Science
+            </h2>
+            <p style ="text-align: justify;">
+                Data Science focuses more on showcasing my python knowledge as well as knowledge on data science framework (pandas, scikit-learn, SciPy, seaborn, spaCy, flask, tensorflow, keras, NumPy, matplotlib).
+            </p>
+            <br>
+            <p>
+                The case below is my work from Asia Pacific University, Final Year Project regarding extraction of elements from unstructured textual data using NLP technique.
+            </p>
+        </section>
+    
+        <section id="about-me", style="background-color:rgb(124, 179, 218)">
+            <div id="goal-container" style="display: flex;  width:100%;">
+                <div class ="container1" style = "width: 33%; text-align: justify;">
+                    <h2 style="padding: 9px;width: 22%; border-bottom: 2px solid #ffffff; font-weight: 600; ">
+                        Goal
+                    </h2 >
+                    <p  style="margin-right: 40px; font-weight: 300;">
+                        Often, companies process data inefficiently especially when it comes to e-commerce company when standardizing address data. The goal of this project is to increase the efficiency when standardizing address data using BERT and CRF model for the NER and N-gram for the grammar correction model.
+                        <br>
+
+                    </p>
+                </div>
+                <div class ="container2" style = "width: 33%">
+                    <h2 style="padding: 9px;width: 30%; border-bottom: 2px solid #ffffff; font-weight: 600;">
+                        Result
+                    </h2 >  
+                    <p  style="margin-right: 40px; font-weight: 300;">
+                        Results are presented in document where research are properly conducted and accuracy graphs are shown as well as the result of the final model. The model also was deployed in prototype website, where user are able to enter address and final result are automatically generated by the model.
+                        <br>
+                    </p>
+
+                </div>
+                <div class = "container3" style = "width: 35%">
+                    <h2 style="padding: 9px;width: 35%; border-bottom: 2px solid #ffffff; font-weight: 600;">
+                        Duration
+                    </h2 >
+                    <p  style="margin-right: 40px; font-weight: 300;">
+                        This type of project varies between 2 weeks to 3 months. The project may contain 4 phases:
+                        <br>
+                        <br>
+                    </p>
+                        <ul style ="font-weight: 300;">
+                            <li>
+                                The first phase is the documentation, as it need to be made for stakeholders or client to be able to understand what's going on and how the model works.
+                            </li>
+                            <br>
+                            <li>
+                                The second phase is the modelling process, depending on the complexity of the model the time varies for the modelling process.
+                            </li>
+                            <br>
+                            <li>
+                                The third phase is the data preparation, the data need to be cleaned and readable for the model that will be deployed.
+                            </li>
+                            <br>
+                            <li>
+                                The fourth phase is the deployment, depending on the client request the deployment time needed may varies.
+                            </li>
+                        </ul>
+                </div>
+
+            </div>
+        </section>
+    
+        <section id="portfolio">
+            <h2 style = "padding: 9px;width: 43%; border-bottom: 2px solid #a4cdfa;">
+                Data Understanding
+            </h2>
+            <p style ="text-align: justify;">
+                Understanding the data allow me to properly tag each of the words thus in this process I simplified the data into few elements.
+                <br>
+                <br>
+                Example of the data:
+                <br>
+                <br>
+                Jl.janaka Rt 1 Rw 1 krajan Wringinanom Sambit Kabupaten Ponorogo Jawa Timur
+                <br>
+                <br>
+                 <ul>
+                    <li>
+                        Jl Janaka — street name
+                    </li>
+                    <li>
+                        RT 1, RW 1 — Neighborhood Unit and Community Unit
+                    </li>
+                    <li>
+                        Krajan — Village
+                    </li>
+                    <li>
+                        Wringinanom — District
+                    </li>
+                    <li>
+                        Kabupaten Ponorogo — Regency
+                    </li>
+                    <li>
+                        Jawa Timur — Province
+                    </li>
+                 </ul>
+                 <br>
+
+                 When that was understood it is easier to build the model thus the basic model visualization would be as shown
+            </p>
+            <br>
+            <img src="science1.png" alt="Image 1" style="height: 30vw; width: 25vw">
+            <br>
+
+            <h2 style = "padding: 9px;width: 43%; border-bottom: 2px solid #a4cdfa;">
+                Model Assessment   
+            </h2>
+            <p style ="text-align: justify;">
+                The selection of the model will be depending on the accuracy score of the model itself where it is measured by the number of correct predictions. The following is the accuracy metric.
+                <br>
+
+            </p>
+            <img src="science2.png" alt="Image 1" style="height: 5vw; width: 25vw">
+            <p>
+                Where:
+            </p>
+            <img src="science3.png" alt="Image 1" style="height: 5vw; width: 20vw">
+            <p>
+                The addresses are often followed by missing POI or street elements thus for such situations, the specific element should be left empty. The following formula is to calculate the average accuracy score of the model
+                <br>
+            </p>
+            <img src="science4.png" alt="Image 1" style="height: 5vw; width: 18vw">
+            <p>
+                Where:
+            </p>
+            <img src="science5.png" alt="Image 1" style="height: 4vw; width: 15vw">
+            <br>
+            <br>
+            
+            <p style ="text-align: justify;">
+                Want to know more about my Data Science Project? view the pdf below.
+                
+             </p>
+            <br>
+             <embed src="science.pdf" width="100%" height="800px" type="application/pdf"/>
+             <br>
+             <br>
+             <p style ="text-align: justify;">
+                Have questions for the pdf? Contact me through email.
+                
+             </p>
+
+        </section>
+    
+
+    <section id="extra" style="background-color:rgb(51, 81, 140); padding: 10px 2% 30px 50px;">
+        <div style="float: right;">
+            <a style="color: rgb(51, 81, 140)" href="https://www.linkedin.com/in/hermanto-kho-83974b201/">
+                <img src="linkedin.png" alt="Image 1" width="30" height="30">
+            </a>
+            <a href="mailto:hermantokho2@gmail.com">
+                <img src="mail.png" alt="Image 2" width="30" height="30" style="margin-top: 10px;">
+            </a>
+        </div>
+        <p>
+            <br>
+            Hermanto
+            <br>
+            <br>
+            hermantokho2@gmail.com
+            <br>
+            <br>
+            Location:
+            <br>
+            Indonesia, Kepulauan Riau, Jalan Ahmad Yani no 70, 29663 (main address)
+            <br>
+            Malaysia, Kuala Lumpur, Jalan Radin Anum, 57000 (second address)
+            <br>
+        </p>
+        <br>
+        <br>
+        <br>
+        <p style="text-align: center;">
+            © 2023 Hermanto
+        </p>
+    </section>
+
+</body>
+
