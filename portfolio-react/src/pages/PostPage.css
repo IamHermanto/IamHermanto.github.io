@@ -1,0 +1,53 @@
+.post-content {
+  margin-top: 40px;
+}
+
+.post-content h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.post-content time {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.post-content h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.post-content p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.post-content pre {
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+.post-content code {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.image-comparison {
+  margin: 30px 0;
+}
+
+.image-comparison img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}

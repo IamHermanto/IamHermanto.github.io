@@ -1,0 +1,21 @@
+footer {
+  margin-top: 80px;
+  padding: 30px 0;
+  border-top: 1px solid var(--border-color);
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+footer a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: var(--link-color);
+}
+
+footer p {
+  margin-top: 10px;
+}
