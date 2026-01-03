@@ -1,331 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    
-	<title>My Website</title>
-	<style>
-        html{
-            scroll-behavior: smooth;
-        }
-        
-        @font-face {
-            font-family: 'Montserrat';
-            src: url('C:/Users/Ale/Documents/static/Montserrat-Regular.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-        .home {
-            width: 100%;
-            height: 770px;
-            object-fit: cover;
-            overflow: hidden;
-            padding: 50px;
-        }
-
-		body {
-			font-family: 'Montserrat', sans-serif;
-            background-color: #eee;
-		}
-
-		nav a:hover {
-			color: #b1d5fc;
-		}
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown a{
-            display: block;
-            text-decoration: none;
-        }
-
-        .dropdown-content {
-            position: absolute;
-            display: none;
-            background-color: #ffffff;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            top: 100%;
-            
-        }
-
-        .dropdown-content a {
-            margin: 0px;
-            display : block;
-            text-decoration: none;
-            padding: 12px 16px;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-		section {
-			background-color: #ffffff;
-            padding: 50px 10% 50px 200px;
-			text-align: left;
-		}
-
-		section.white-box {
-			background-color: #fff;
-			padding: 50px;
-		}
-
-		h1 {
-			margin-bottom: 20px;
-		}
-
-		h2 {
-			margin-bottom: 10px;
-		}
-
-		form {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-
-		label {
-			display: block;
-			margin: 10px;
-		}
-
-		input, textarea {
-			padding: 10px;
-			margin: 10px;
-			border-radius: 5px;
-			border: none;
-			width: 100%;
-			max-width: 500px;
-			font-size: 16px;
-			font-family: inherit;
-			resize: none;
-		}
-
-		input[type="submit"] {
-			background-color: #333;
-			color: #fff;
-			cursor: pointer;
-			transition: all 0.2s;
-		}
-
-		input[type="submit"]:hover {
-			background-color: #ccc;
-		}
-
-        nav {
-            top: 0px;
-            position: fixed;
-            display: block;
-            background-color: rgb(255, 255, 255);
-            transition: top 0.3s;
-            width: 100%;
-            min-height: auto;
-            text-align: center;
-            z-index: 2;
-        }
-
-        nav a{
-            display: inline-block;
-            padding: 15px;
-            text-decoration: none;
-            font-size: 17px;
-            color: #000000;
-			margin: 0 20px;
-			transition: all 0.2s;
-        }
-
-
-        .image-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .image-container {
-            position: relative;
-            margin: 10px;
-            width: 30%;
-        }
-
-        .image-overlay {
-            display: none;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            transition: .5s ease;
-        }
-
-        .image-container:hover .image-overlay {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .btn {
-            background-color: #6386e7;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: all 0.2s ease-in-out;
-            
-        }
-
-        .btn:hover {
-            background-color: #6386e7;
-        }
-
-        li {
-            list-style-position: inside;
-            padding-left: 20px;
-        }
-
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Performance Dashboard - Hermanto</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-		<nav  id="navbar">
-			<a href="index.html#about-me">About Me</a>
-			<div class="dropdown">
-				<a href="index.html#projects">Projects</a>
-				<div class="dropdown-content">
-					<a href="dashboard.html">Dashboards</a>
-                    <a href="analytics.html">Data Analytics</a>
-                    <a href="science.html">Data Science</a>
-				</div>
-			</div>
-			<a href="index.html#portfolio">Portfolio</a>
-			<a href="index.html#contact">Contact</a>
-		</nav>
-
-
-        <section id="projects">
-            <h2 style = "padding: 9px;width: 18%; border-bottom: 2px solid #a4cdfa;">
-                Dashboards
-            </h2>
-            <p style ="text-align: justify;">
-                The dashboard below is an example focusing on number of sales, revenue, and customers. There are three types of views each of them shows different perspectives. 
-            </p>
-            <br>
-            <p>
-                The executive summary shows overally important visualization, product details showcases about the products that was sold, and the customer details page showcases top customers as well as what product their contribution on.
-            </p>
-            <br>
-        </section>
-    
-        <section id="about-me", style="background-color:rgb(124, 179, 218)">
-            <br>
-            <div id="goal-container" style="display: flex;  width:100%;">
-                <div class ="container1" style = "width: 33%">
-                    <h2 style="padding: 9px;width: 22%; border-bottom: 2px solid #ffffff; font-weight: 600; ">
-                        Goal
-                    </h2 >
-                    <p  style="margin-right: 40px; font-weight: 300;">
-                        The purpose of a dashboard is to view the mosst important KPI’s and results at a glance. Dashboards are an interactive way to see how the company or project perform.
-                        <br>
-
-                    </p>
-                </div>
-                <div class ="container2" style = "width: 33%">
-                    <h2 style="padding: 9px;width: 30%; border-bottom: 2px solid #ffffff; font-weight: 600;">
-                        Result
-                    </h2 >  
-                    <p  style="margin-right: 40px; font-weight: 300;">
-                        By using dashboards, you will discover the right insights in an easy way. You can apply filters yourself and consult different graphs. By immediately having the right information available, correct decisions can be made.
-                        <br>
-                    </p>
-
-                </div>
-                <div class = "container3" style = "width: 35%">
-                    <h2 style="padding: 9px;width: 35%; border-bottom: 2px solid #ffffff; font-weight: 600;">
-                        Duration
-                    </h2 >
-                    <p  style="margin-right: 40px; font-weight: 300;">
-                        On average, the development of a dashboard takes 2 weeks – 2 months. The development consists of two phases:
-                        <br>
-                        <br>
-                        <ul style ="font-weight: 300;">
-                            <li>Selection of KPI’s and design of the dashboard</li>
-                            <br>
-                            <li>Collecting Data and dashboard development</li>
-                        </ul>
-                        <br>
-                    </p>
-
-                </div>
-
-            </div>
-        </section>
-    
-        <section id="portfolio">
-            <h2 style = "padding: 9px;width: 10%; border-bottom: 2px solid #a4cdfa;">
-                Image   
-            </h2>
-
-            <div class = "image-container2">
-                <img src="dashboard1.png" alt="Image 1" style="height: 40vw; width: 70vw">
-                <br>
-                <br>
-                <img src="dashboard2.png" alt="Image 1" style="height: 40vw; width: 70vw">
-                <br> 
-                <br>  
-                <img src="dashboard3.png" alt="Image 1" style="height: 40vw; width: 70vw">
-                <br>
-                <br>
-                <p>
-                    Want to know more about the dashboards? Contact me through my email.
-                </p>
-
-            </div>
-        </section>
-    
-
-    <section id="extra" style="background-color:rgb(51, 81, 140); padding: 10px 2% 30px 50px;">
-        <div style="float: right;">
-            <a style="color: rgb(51, 81, 140)" href="https://www.linkedin.com/in/hermanto-kho-83974b201/">
-                <img src="linkedin.png" alt="Image 1" width="30" height="30">
-            </a>
-            <a href="mailto:hermantokho2@gmail.com">
-                <img src="mail.png" alt="Image 2" width="30" height="30" style="margin-top: 10px;">
-            </a>
+    <header>
+        <div class="container">
+            <h1><a href="../index.html">Hermanto</a></h1>
+            <nav>
+                <a href="../index.html">Posts</a>
+                <a href="../about.html">About</a>
+                <a href="../resume.html">Resume</a>
+                <a href="mailto:hermantokho2@gmail.com">Contact</a>
+            </nav>
         </div>
-        <p>
-            <br>
-            Hermanto
-            <br>
-            <br>
-            hermantokho2@gmail.com
-            <br>
-            <br>
-            Location:
-            <br>
-            Indonesia, Kepulauan Riau, Jalan Ahmad Yani no 70, 29663 (main address)
-            <br>
-            Malaysia, Kuala Lumpur, Jalan Radin Anum, 57000 (second address)
-            <br>
-        </p>
-        <br>
-        <br>
-        <br>
-        <p style="text-align: center;">
-            © 2023 Hermanto
-        </p>
-    </section>
+    </header>
 
+    <main class="container">
+        <article class="post-content">
+            <h1>Sales Performance Dashboard</h1>
+            <time>Business Intelligence Project - 2023</time>
+
+            <p>
+                This dashboard example focuses on sales, revenue, and customer metrics. Three different 
+                views provide multiple perspectives on the data.
+            </p>
+
+            <p>
+                The executive summary shows overall important visualizations, product details showcase 
+                sold products, and customer details highlight top customers and their product contributions.
+            </p>
+
+            <h2>Project Overview</h2>
+
+            <h3>Goal</h3>
+            <p>
+                Dashboards enable viewing the most important KPIs and results at a glance. They provide 
+                an interactive way to see how companies or projects perform.
+            </p>
+
+            <h3>Result</h3>
+            <p>
+                Using dashboards, you discover insights easily. You can apply filters and consult different 
+                graphs. With immediate access to the right information, correct decisions can be made.
+            </p>
+
+            <h3>Duration</h3>
+            <p>
+                Dashboard development typically takes 2 weeks to 2 months, consisting of two phases:
+            </p>
+            <ul>
+                <li>KPI selection and dashboard design</li>
+                <li>Data collection and dashboard development</li>
+            </ul>
+
+            <h2>Dashboard Views</h2>
+
+            <h3>Executive Summary</h3>
+            <img src="../dashboard1.png" alt="Executive summary dashboard">
+
+            <h3>Product Details</h3>
+            <img src="../dashboard2.png" alt="Product details dashboard">
+
+            <h3>Customer Details</h3>
+            <img src="../dashboard3.png" alt="Customer details dashboard">
+
+            <h2>Want to Learn More?</h2>
+            <p>
+                Interested in learning more about these dashboards? Contact me at 
+                <a href="mailto:hermantokho2@gmail.com">hermantokho2@gmail.com</a>
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="../index.html">Posts</a> • 
+            <a href="../about.html">About</a> • 
+            <a href="../resume.html">Resume</a> • 
+            <a href="https://www.linkedin.com/in/hermanto-kho-83974b201/">LinkedIn</a>
+            <p>Copyright © Hermanto 2024</p>
+        </div>
+    </footer>
 </body>
-
+</html>

@@ -1,227 +1,67 @@
 <!DOCTYPE html>
-<html>
-
-
-<link rel="stylesheet" href="style.css">
+<html lang="en">
 <head>
-
-    <title>My Website</title>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermanto - Data Analytics</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav id="navbar">
-        <a href="#about-me">About Me</a>
-        <div class="dropdown">
-            <a href="#projects">Projects</a>
-            <div class="dropdown-content">
-                <a href="dashboard.html">Dashboards</a>
-                <a href="analytics.html">Data Analytics</a>
-                <a href="science.html">Data Science</a>
-
-            </div>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Hermanto</a></h1>
+            <nav>
+                <a href="index.html">Posts</a>
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+                <a href="mailto:hermantokho2@gmail.com">Contact</a>
+            </nav>
         </div>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    </header>
 
-    <div style="display: flex; align-items: center; justify-content: center;">
-        <img id="home" src="relaxing.jpg" alt="Your Image">
+    <main class="container">
+        <article class="post-preview">
+            <h2><a href="posts/data-science.html">Address Standardization with NLP</a></h2>
+            <time>Final Year Project - 2023</time>
+            <p>
+                Extraction of elements from unstructured textual data using NLP techniques. 
+                Used BERT and CRF models for Named Entity Recognition and N-gram for grammar correction, 
+                achieving efficient address standardization for e-commerce companies.
+            </p>
+            <a href="posts/data-science.html" class="read-more">read more →</a>
+        </article>
 
-        <div id="name-box" class="text-overlay" style="position: absolute;">
-            <h1
-                style="border-radius: 5px; padding: 10px; background-color: white; margin: auto; text-align: center;color:rgb(124, 179, 218)">
-                Hermanto</h1>
-            <h2 style="color: rgb(11, 59, 94);font-size: 20px; text-align: center; padding-top: 10px;">Data Analytics
-            </h2>
+        <article class="post-preview">
+            <h2><a href="posts/analytics.html">Google Merchandise Traffic Analysis</a></h2>
+            <time>Data Analytics - 2023</time>
+            <p>
+                Sales funnel optimization analysis revealing a 5.8% potential revenue increase. 
+                Analyzed user behavior across channels, identified key drop-off points, and provided 
+                actionable recommendations to improve e-commerce conversion rates.
+            </p>
+            <a href="posts/analytics.html" class="read-more">read more →</a>
+        </article>
+
+        <article class="post-preview">
+            <h2><a href="posts/dashboard.html">Sales Performance Dashboard</a></h2>
+            <time>Business Intelligence - 2023</time>
+            <p>
+                Interactive Power BI dashboard showcasing sales, revenue, and customer metrics. 
+                Three-view system providing executive summary, product details, and customer insights 
+                for data-driven decision making.
+            </p>
+            <a href="posts/dashboard.html" class="read-more">read more →</a>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="index.html">Posts</a> • 
+            <a href="about.html">About</a> • 
+            <a href="resume.html">Resume</a> • 
+            <a href="https://www.linkedin.com/in/hermanto-kho-83974b201/">LinkedIn</a>
+            <p>Copyright © Hermanto 2024</p>
         </div>
-    </div>
-
-    <div id="killme">
-        <section id="projects">
-            <h2 style="padding: 9px;width: 12%; border-bottom: 2px solid #a4cdfa;">
-                Projects
-            </h2>
-            <p>
-                As an Computer Science Major which specialized in Data Analytics I have ability to transform data into
-                valuable and readable insights. My goal is to improve results, be effcient, and make better decisions.
-            </p>
-            <br>
-            <p>
-                I am experienced in Machine Learning, supervised and unsupervised algorithms and use data visualization
-                techniques to present the results. I use SQL, R, Python and PowerBI for my Data Analytics Projects.
-            </p>
-            <br>
-            <h2 style="padding: 9px;width: 35%; border-bottom: 2px solid #a4cdfa;">
-                Visualization Dashboards
-            </h2>
-            <br>
-            <p>
-                Visualization Dashboards Project showcases ETL techniques implemented for huge datasets where trends, insights and
-                recommendations are presented in Power BI and Tableau
-            </p>
-            <br>
-            <span>(<a href="dashboard.html" style="color:rgb(124, 179, 218)">Example</a>)</span>
-            <br>
-            <br>
-            <h2 style="padding: 9px;width: 21%; border-bottom: 2px solid #a4cdfa;">
-                Data Analytics
-            </h2>
-            <br>
-            <p>
-                Data Analytics Project showcases the understanding of past data to gain insights and
-                recommendations to make decisions for present solutions.
-            </p>
-            <br>
-            <span>(<a href="dashboard.html" style="color:rgb(124, 179, 218)">Example</a>)</span>
-            <br>
-            <br>
-            <h2 style="padding: 9px;width: 19%; border-bottom: 2px solid #a4cdfa;">
-                Data Science
-            </h2>
-            <br>
-            <p>
-                Machine Learning and skills in Python are showcased in this project, predicting the right element to be
-                extracted from textual data in order to increase the efficiency for the data cleaning process
-            </p>
-            <br>
-            <span>(<a href="science.html" style="color:rgb(124, 179, 218)">Example</a>)</span>
-        </section>
-
-        <section id="about-me" , style="background-color:rgb(124, 179, 218)">
-            <h2 style="padding: 9px;width: 15%; border-bottom: 2px solid #ffffff;">About Me</h2>
-            <br>
-            <div style="display: flex; text-align: justify;">
-                <p style="margin-right: 40px;">
-                    Hello, my name is Hermanto and I am Fresh Graduate from Asia Pacific University and Staffordshire
-                    University. I hold a Bachelor’s degree in Computer Science specialized in Data Analytics.
-                    <br>
-                    <br>
-                    Since I was young, I have always enjoyed to delve into technologies knowledge this is especially
-                    because my Father was also majored in Computer Science. I see this as an advantage from others.
-                    <br>
-                    <br>
-                    The main reason why I got into Data Analytics is because I felt that Machine Learning, AI, and Data
-                    are the core of future technologies which is why I chose Data Analytics.
-                    <br>
-                    <br>
-                    As of yet I have zero experience in Data Science and Data Analytics but I'm continously improving
-                    myself through self-made projects.
-                    <br>
-                    <br>
-                    Give me an oppurtunity to pursue my dream job by reaching out to me by e-mail.
-                </p>
-                <img src="potrait.jpg" alt="Image description" style=" width: 22%; height:auto;">
-            </div>
-        </section>
-
-        <section id="portfolio">
-            <h2 style="padding: 9px;width: 10%; border-bottom: 2px solid #a4cdfa;">
-                Portfolio
-            </h2>
-
-            <div class="scrollmenu">
-                <div class="image-section">
-                    <div class="image-container" style="display: flex; width: 100%; gap: 20%;">
-                        <div class="image1" style="width: 30%">
-                            <a href="dashboard.html">
-                                <img src="dashboard1.png" alt="Image 1" style="height: 20vw; width: 30vw;  object-fit: cover; object-position: 100% 0;">
-                                <div class="middle">
-                                    <div class="textpop">Dashboard</div>
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="image1" style="width: 30%">
-                            <a href="analytics.html">
-                                <img src="analytics1.png" alt="Image 1" style="height: 20vw; width: 30vw; object-fit: cover; object-position: 100% 0;">
-                                <div class="middle">
-                                    <div class="textpop">Data Analytics </div>
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="image1" style="width: 30%">
-                            <a href="science.html">
-                                <img src="science1.png" alt="Image 1" style="height: 20vw; width: 30vw; object-fit: cover; object-position: 100% 0;">
-                                <div class="middle">
-                                    <div class="textpop">Data Science </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-
-        <section id="contact" style="background-color:rgb(124, 179, 218)">
-            <h2 style="padding: 9px;width: 12%; border-bottom: 2px solid #ffffff;">
-                Contact
-            </h2>
-            <p>
-                <br>
-                Hermanto
-                <br>
-                <br>
-                As Data Analytics major, I know exactly how you can use data optimally within your business. Based on
-                your objectives, we will make a plan to reach the right insight.
-                <br>
-                <br>
-                I am available for:
-                <br>
-                <br>
-            <ul>
-                <li>Data Science (prediction models, segmentations)</li>
-                <li>Data Analysis (processing, transforming data)</li>
-                <li>Data Visualisation (infographics, dashboards)</li>
-            </ul>
-            </p>
-        </section>
-    </div>
-
-    <section id="extra" style="background-color:rgb(51, 81, 140); padding: 10px 2% 30px 50px;">
-        <div style="float: right;">
-            <a style="color: rgb(51, 81, 140)" href="https://www.linkedin.com/in/hermanto-kho-83974b201/">
-                <img src="linkedin.png" alt="Image 1" width="30" height="30">
-            </a>
-            <a href="mailto:hermantokho2@gmail.com">
-                <img src="mail.png" alt="Image 2" width="30" height="30" style="margin-top: 10px;">
-            </a>
-        </div>
-        <p>
-            <br>
-            Hermanto
-            <br>
-            <br>
-            hermantokho2@gmail.com
-            <br>
-            <br>
-            Location:
-            <br>
-            Indonesia, Kepulauan Riau, Jalan Ahmad Yani no 70, 29663 (main address)
-            <br>
-            Malaysia, Kuala Lumpur, Jalan Radin Anum, 57000 (second address)
-            <br>
-        </p>
-        <br>
-        <br>
-        <br>
-        <p style="text-align: center;">
-            © 2023 Hermanto
-        </p>
-    </section>
-
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "-50px";
-            } else {
-                document.getElementById("navbar").style.top = "0";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    </script>
+    </footer>
 </body>
+</html>

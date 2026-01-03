@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Standardization with NLP - Hermanto</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="../index.html">Hermanto</a></h1>
+            <nav>
+                <a href="../index.html">Posts</a>
+                <a href="../about.html">About</a>
+                <a href="../resume.html">Resume</a>
+                <a href="mailto:hermantokho2@gmail.com">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post-content">
+            <h1>Address Standardization with NLP</h1>
+            <time>Final Year Project - Asia Pacific University</time>
+
+            <p>
+                Data Science focuses on showcasing Python knowledge and expertise with data science frameworks 
+                including pandas, scikit-learn, SciPy, seaborn, spaCy, Flask, TensorFlow, Keras, NumPy, and matplotlib.
+            </p>
+
+            <p>
+                This project addresses extraction of elements from unstructured textual data using NLP techniques.
+            </p>
+
+            <h2>Project Overview</h2>
+
+            <h3>Goal</h3>
+            <p>
+                E-commerce companies often process address data inefficiently, especially when standardizing addresses. 
+                This project aims to increase efficiency in address data standardization using BERT and CRF models 
+                for Named Entity Recognition (NER) and N-gram for the grammar correction model.
+            </p>
+
+            <h3>Result</h3>
+            <p>
+                Results are documented with properly conducted research, accuracy graphs, and final model outcomes. 
+                The model was deployed in a prototype website where users can enter addresses and receive 
+                automatically generated standardized results.
+            </p>
+
+            <h3>Duration</h3>
+            <p>This type of project typically takes 2 weeks to 3 months, consisting of four phases:</p>
+            <ul>
+                <li><strong>Documentation</strong> - Creating materials for stakeholders and clients to understand the model</li>
+                <li><strong>Modeling</strong> - Building and training the model (duration varies with complexity)</li>
+                <li><strong>Data Preparation</strong> - Cleaning and preparing data for deployment</li>
+                <li><strong>Deployment</strong> - Implementation based on client requirements</li>
+            </ul>
+
+            <h2>Data Understanding</h2>
+            <p>
+                Understanding the data structure allowed proper tagging of each word. The data was simplified 
+                into key elements.
+            </p>
+
+            <p><strong>Example address:</strong><br>
+            Jl.janaka Rt 1 Rw 1 krajan Wringinanom Sambit Kabupaten Ponorogo Jawa Timur</p>
+
+            <p><strong>Elements identified:</strong></p>
+            <ul>
+                <li>Jl Janaka — Street name</li>
+                <li>RT 1, RW 1 — Neighborhood Unit and Community Unit</li>
+                <li>Krajan — Village</li>
+                <li>Wringinanom — District</li>
+                <li>Kabupaten Ponorogo — Regency</li>
+                <li>Jawa Timur — Province</li>
+            </ul>
+
+            <p>This understanding enabled easier model building with clear visualization.</p>
+
+            <img src="../science1.png" alt="Model visualization">
+
+            <h2>Model Assessment</h2>
+            <p>
+                Model selection depends on accuracy scores measured by the number of correct predictions. 
+                The accuracy metric used:
+            </p>
+
+            <img src="../science2.png" alt="Accuracy formula">
+
+            <p>Where:</p>
+            <img src="../science3.png" alt="Formula components">
+
+            <p>
+                Addresses often have missing POI or street elements. For such situations, specific elements 
+                are left empty. The following formula calculates the average accuracy score:
+            </p>
+
+            <img src="../science4.png" alt="Average accuracy formula">
+
+            <p>Where:</p>
+            <img src="../science5.png" alt="Average formula components">
+
+            <h2>Full Documentation</h2>
+            <p>For complete project details, view the PDF documentation below:</p>
+
+            <embed src="../science.pdf" width="100%" height="800px" type="application/pdf">
+
+            <p>
+                Questions about the documentation? Contact me at 
+                <a href="mailto:hermantokho2@gmail.com">hermantokho2@gmail.com</a>
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="../index.html">Posts</a> • 
+            <a href="../about.html">About</a> • 
+            <a href="../resume.html">Resume</a> • 
+            <a href="https://www.linkedin.com/in/hermanto-kho-83974b201/">LinkedIn</a>
+            <p>Copyright © Hermanto 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
