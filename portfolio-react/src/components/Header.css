@@ -1,13 +1,18 @@
 header {
-  padding: 40px 0 20px;
+  padding: 40px 20px;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 40px;
+}
+
+.header-content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 header h1 {
   font-size: 28px;
-  margin-bottom: 15px;
   font-weight: 600;
+  margin-bottom: 15px;
 }
 
 header h1 a {
@@ -15,17 +20,20 @@ header h1 a {
   text-decoration: none;
 }
 
-nav {
-  font-size: 16px;
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-nav a {
+header nav a {
   color: var(--text-secondary);
   text-decoration: none;
-  margin-right: 20px;
+  font-size: 14px;
   transition: color 0.2s;
+  padding: 5px 10px;
 }
 
-nav a:hover {
-  color: var(--link-color);
+header nav a:hover {
+  color: var(--text-primary);
 }

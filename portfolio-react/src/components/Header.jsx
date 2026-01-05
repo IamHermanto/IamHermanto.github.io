@@ -4,10 +4,8 @@ import './Header.css'
 function Header() {
   return (
     <header>
-      <div className="container">
-        <h1>
-          <Link to="/">Hermanto</Link>
-        </h1>
+      <div className="header-content">
+        <h1><Link to="/">Hermanto</Link></h1>
         <nav>
           <Link to="/">Posts</Link>
           <Link to="/about">About</Link>
